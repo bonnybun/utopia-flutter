@@ -29,7 +29,7 @@ abstract class ExtensionHelper {
     return _appendExtension("$basename ($counter)", extension);
   }
 
-  static String _replaceExtension(String name, String extension) =>
+  static String _replaceExtension(String name, String? extension) =>
       _appendExtension(_splitExtension(name).$1, extension);
 
   static String _appendExtension(String name, String? extension) => extension != null ? "$name.$extension" : name;
